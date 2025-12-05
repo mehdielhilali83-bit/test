@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — FSA</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
+    <style>
+        body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(145deg, #91ac53, #c56f93);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+        .container-custom {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        p {
+            font-size: 16px;
+            color: #444;
+        }
+
+        label {
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 6px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            background: #fafafa;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #0056b3;
+            box-shadow: 0 0 4px rgba(0, 86, 179, 0.3);
+        }
+
+        button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 12px;
+            background: #090085;
+            color: rgb(224, 224, 224);
+            font-size: 18px;
+            border-radius: 10px;
+            border: none;
+            transition: 0.2s ease;
+        }
+
+        button:hover {
+            background: #030c03;
+        }
+
+        footer {
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+        }
+
+        footer a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Logo */
+        .logo {
+            max-width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-custom">
+        
+        <div class="text-center mb-3">
+            <img src="logo_entete_fsa.png" alt="Logo FSA" class="img-fluid logo">
+        </div>
+
+        <p>Bonjour chers étudiants, vous êtes ici pour nous contacter car vous avez rencontré un problème.</p>
+        <p>Pour que nous puissions vous aider, veuillez remplir le formulaire suivant :</p>
+
+        <form action="contact-admin.html">
+            
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+
+            <label for="sujet">Motif du Contact <span style="color: red;">*</span></label>
+            <select id="sujet" name="sujet" required>
+                <option value="">-- Sélectionnez un motif --</option>
+                <option value="technique">Problème Technique / Bug</option>
+                <option value="suggestion">Suggestion d'Amélioration</option>
+                <option value="general">Question Générale</option>
+                <option value="abus">Rapport d'Abus ou de Contenu</option>
+                <option value="recorection">Demande de recorrection</option>
+                <option value="autre">Autre</option>
+
+            </select>
+
+            <label for="message">Votre Message <span style="color: red;">*</span></label>
+            <textarea id="message" name="message" rows="8" required></textarea>
+
+            <button type="submit">Envoyer le Message</button>
+        </form>
+
+        <footer>
+            <h3>Informations Alternatives</h3>
+            <p>Si le formulaire ne fonctionne pas, envoyez votre message à :  
+               <strong><a href="mailto:elhilali753@gmail.com">elhilali753@gmail.com</a></strong>
+            </p>
+        </footer>
+
+    </div>
+
+</body>
+</html>

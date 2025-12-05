@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FSA Student Dashboard</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(145deg, #a0c1f7, #f0e5f9);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header-logo img {
+      max-width: 300px;
+      margin: 20px auto;
+      display: block;
+      border-radius: 15px;
+      transform: perspective(500px) rotateX(2deg) rotateY(2deg);
+      transition: transform 0.3s;
+    }
+
+    .navbar {
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      margin: 20px 0;
+      backdrop-filter: blur(5px);
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    .content h3, .content h4, .content h5, .content p {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .footer {
+      background-color: #7a6471;
+      color: white;
+      margin-top: auto;
+      padding-top: 40px;
+      padding-bottom: 10px;
+      opacity: 0.85;
+      transition: opacity 0.7s;
+    }
+
+    .footer a {
+      color: white;
+      text-decoration: none;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    .social-btn {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      margin-right: 5px;
+    }
+    .social-btn.facebook { background-color: #3b5998; }
+    .social-btn.twitter { background-color: #55acee; }
+    .social-btn.google { background-color: #dd4b39; }
+    .social-btn.instagram { background-color: #ac2bac; }
+    .social-btn.linkedin { background-color: #0082ca; }
+    .social-btn.github { background-color: #333333; }
+
+    .footer-bottom {
+      background-color: #6b738e;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+ <body >
+   <div class="container mt-4 text-center">
+    <img src="logo_entete_fsa.png" alt="Logo FSA" class="img-fluid" style="max-width: 1000px;">
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light mx-3 px-3">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">FSA Dashboard</a>
+      <button class="navbar-toggler" type="button" 
+              data-bs-toggle="collapse" 
+              data-bs-target="#navbarNavDropdown" 
+              aria-controls="navbarNavDropdown" 
+              aria-expanded="false" 
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login old.html" target="_blank">Se connecter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Inscription.html" target="_blank">Créer un compte</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://scol.fsa.ac.ma/edt/" target="_blank">Accès à votre planning</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" target="_blank">Accès à votre note</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" 
+               role="button" 
+               data-bs-toggle="dropdown" 
+               aria-expanded="false">
+              Plus
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="support.html">Support Technique & FAQ</a></li>
+              <li><a class="dropdown-item" href="login old.html">Déconnexion</a></li>
+              
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container content">
+    <h3>👋 Bienvenue, étudiant(e) !</h3>
+    <h4>Nous sommes ravis de vous accueillir ! Ce site est conçu pour vous aider à exceller dans vos études, à votre propre rythme.</h4>
+    <p><strong>Votre succès est notre priorité. Que cherchez-vous aujourd'hui ?</strong></p>
+    <br>
+    <h5>- Recherche de cours/matières ? Rendez-vous à la section Ressources.</h5>
+    <h5>- Besoin d'aide pour un devoir ? Consultez nos Guides et Tutoriels.</h5>
+    <h5>- Curieux de nos événements ? Jetez un œil à l'Agenda.</h5>
+    <h5>- 🚀 Accéder aux notes et planning ? Veuillez vous connecter immédiatement.</h5>
+    <h5>- ⭐ Pas encore de compte ? Cliquez ici pour créer votre accès personnel.</h5>
+
+    <h3 class="mt-4"><strong>⚠️ Un problème de connexion ou d'identifiants ?</strong></h3>
+    <h4>Si vous rencontrez un dysfonctionnement ou avez besoin d'assistance, notre service de support est à votre entière disposition : [Centre d'Aide/Support]</h4>
+  </div>
+
+  <footer class="footer pt-5 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 mb-4">
+          <h6 class="text-uppercase fw-bold">Ecole Zyad</h6>
+          <p>Si vous rencontrez un dysfonctionnement ou avez besoin d'assistance, notre service de support est à votre entière disposition.</p>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h6 class="text-uppercase fw-bold"><i class="fas fa-location-dot me-2"></i>Localisation</h6> 
+          <p>📍 Ecole Al Hanane 4, Agadir, Maroc</p>
+          <a href="https://maps.app.goo.gl/YtRpB5TZox6rCsE36" 
+             class="text-white text-decoration-underline" 
+             target="_blank">Voir sur Google Maps</a>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h6 class="text-uppercase fw-bold">Contact</h6>
+          <p><i class="fas fa-home me-2"></i> Founty, Avenue du 20 Août, Morocco</p>
+          <p><i class="fas fa-envelope me-2"></i> elhilali753@gmail.com</p>
+          <p><i class="fas fa-phone me-2"></i> + 01 234 567 88</p>
+          <p><i class="fas fa-print me-2"></i> + 01 234 567 89</p>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h6 class="text-uppercase fw-bold">Follow Us</h6>
+          <a href="https://www.facebook.com/" class="social-btn facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://x.com/" class="social-btn twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.google.com/" class="social-btn google" target="_blank"><i class="fab fa-google"></i></a>
+          <a href="https://www.instagram.com/" class="social-btn instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/" class="social-btn linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/" class="social-btn github" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © 2025 Copyright: <a href="#">FSA Dashboard</a> 
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+     
+
+      
+
+      // 3️⃣ Animation logo
+      const logo = document.querySelector("img.img-fluid");
+      if (logo) {
+        logo.addEventListener("mouseenter", () => logo.style.transform = "scale(1.05)");
+        logo.addEventListener("mouseleave", () => logo.style.transform = "scale(1)");
+      }
+
+      // 4️⃣ Animation footer
+      const footer = document.querySelector(".footer");
+      if (footer) {
+        window.addEventListener("scroll", () => {
+          footer.style.opacity = window.scrollY > 200 ? "1" : "0.85";
+        });
+      }
+
+    });
+  </script>
+</body>
+</html>

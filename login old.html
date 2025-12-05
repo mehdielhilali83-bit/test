@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Connexion – Application étudiants</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+        * {
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        body {
+            color: #fff;
+            background-color: #e9ff99;
+            background-image:
+                radial-gradient(at 9% 89%, hsla(215, 90%, 73%, 1) 0px, transparent 50%),
+                radial-gradient(at 72% 6%, hsla(331, 74%, 64%, 1) 0px, transparent 50%),
+                radial-gradient(at 24% 19%, hsla(14, 90%, 74%, 1) 0px, transparent 50%),
+                radial-gradient(at 65% 6%, hsla(6, 79%, 76%, 1) 0px, transparent 50%),
+                radial-gradient(at 20% 98%, hsla(316, 72%, 64%, 1) 0px, transparent 50%),
+                radial-gradient(at 44% 9%, hsla(40, 96%, 77%, 1) 0px, transparent 50%),
+                radial-gradient(at 10% 9%, hsla(76, 65%, 63%, 1) 0px, transparent 50%);
+            min-height: 100vh;
+            padding-top: 30px;
+        }
+
+        .forgot-password-link {
+            color: #955ddf !important;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .forgot-password-link:hover {
+            color: #fff !important;
+            text-decoration: underline;
+        }
+
+        .card {
+            background: rgba(0, 0, 0, 0.56);
+            border-radius: 16px;
+            color: white;
+            backdrop-filter: blur(11px);
+            -webkit-backdrop-filter: blur(11px);
+            border: none;
+        }
+
+        .btn-danger {
+            --bs-btn-bg: #dc3545;
+            --bs-btn-border-color: #dc3545;
+            --bs-btn-hover-bg: #c82333;
+            --bs-btn-hover-border-color: #bd2130;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12 text-center">
+                <img src="logo_entete_fsa.png" alt="Logo FSA" class="img-fluid" style="max-width: 1000px;">
+            </div>
+        </div>
+    </div>
+
+    <main class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-sm-10 col-md-6 col-lg-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+
+                        <h1 class="h4 text-center mb-4">Connexion</h1>
+
+                        <form onsubmit="connecter(event)">
+                            <div class="mb-3">
+                                <label for="emailInput" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="emailInput" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="passwordInput" class="form-label">Mot de passe</label>
+                                <input type="password" class="form-control" id="passwordInput" required>
+                            </div>
+                            <div class="mb-3"></div>
+                            <a href="mdp-oublie.html" class="forgot-password-link">Oublie mot de passe ?</a>
+                            <br>
+                            <button type="submit" class="btn btn-danger w-100">Se connecter</button>
+                        </form>
+
+                        <div class="mt-3 text-center">
+                            <a href="inscription.html">Pas encore inscrit ? S'inscrire</a>
+                            <hr class="my-4">
+
+                            <div class="small text-muted">
+                                Accès direct (DEV) :
+                                <a href="etudiant_dashboard.html">Étudiant</a> ·
+                                <a href="prof_dashboard.html">Prof</a> ·
+                                <a href="admin_dashboard.html">Admin</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        function connecter(event) {
+            event.preventDefault();
+
+            let email = document.getElementById("emailInput").value;
+            let pass = document.getElementById("passwordInput").value;
+
+            if (email === "" || pass === "") {
+                alert("Veuillez remplir tous les champs.");
+                return;
+            }
+
+            window.location.href = "etudiant_dashboard.html";
+        }
+    </script>
+
+</body>
+</html>

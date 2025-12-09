@@ -55,6 +55,13 @@
         .field {
             margin-bottom: 1rem;
         }
+        .header-logo img {
+      max-width: 300px;
+      margin: 20px auto;
+      display: block;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      border-radius: 15px;
+        }
     </style>
 </head>
 <body>
@@ -63,9 +70,13 @@
         <a class="navbar-brand " href="login old.html">Connexion</a>
     </div>
 </nav>
-<div class="rounded float-end text-center col-12">
-    <img src="logo_entete_fsa.png">
-</div>
+<div class="container mt-4 header-logo">
+    <div class="row">
+      <div class="col-12 text-center">
+        <img src="logo_entete_fsa.png" alt="Logo FSA" class="img-fluid" style="max-width: 1000px;">
+      </div>
+    </div>
+  </div>
 
 <main class="container d-flex justify-content-center align-items-center" style="min-height:70vh;">
     <form onsubmit="bang(event)" class="card-glass text-light" style="width: min(92vw, 520px);" action="/register" method="post">
@@ -113,6 +124,17 @@
 
       
     }
+     document.addEventListener("DOMContentLoaded", () => {
+
+      
+      const logo = document.querySelector("img.img-fluid");
+      if (logo) {
+        logo.addEventListener("mouseenter", () => (logo.style.transform = "scale(1.05)"));
+        logo.addEventListener("mouseleave", () => (logo.style.transform = "scale(1)"));
+      }
+      
+      
+    })
     
 </script>
 </body>

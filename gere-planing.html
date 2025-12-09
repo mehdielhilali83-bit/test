@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emploi du Temps - ILTI</title>
+
+<style>
+    body {
+        font-family: Poppins, sans-serif;
+        background: #f0f4f7;
+        padding: 40px;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 2rem;
+        text-decoration: underline;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: auto;
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    }
+
+    thead {
+        background: #032d31;
+        color: white;
+    }
+
+    th, td {
+        padding: 15px;
+        text-align: center;
+        font-size: 1rem;
+        border-bottom: 1px solid #ddd;
+    }
+
+    tbody tr:hover {
+        background: #f2f2f2;
+    }
+
+    .matiere {
+        font-weight: 600;
+        color: #032d31;
+    }
+
+    .salle {
+        font-size: 0.9rem;
+        color: #777;
+    }
+    .header-logo img {
+      max-width: 1000px;
+      display: block;
+      margin: 20px auto;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+      transition: 0.1s ease;
+    }
+    .btn-edit {
+            background: #ffc107;
+            border: none;
+            color: #000;
+            border-radius: 8px;
+            padding: 6px 14px;
+            font-weight: 600;
+            transition: 0.1s ease;
+            
+        }
+
+        .btn-edit:hover {
+            background: #e0a800;
+            transform: scale(1.05);
+        }
+
+        .btn-delete {
+            background: #dc3545;
+            border: none;
+            color: white;
+            border-radius: 8px;
+            padding: 6px 14px;
+            font-weight: 600;
+            transition: 0.1s ease;
+        }
+
+        .btn-delete:hover {
+            background: #bb2d3b;
+            transform: scale(1.05);
+        }
+        .btn-creer {
+            background: #5b12ad;
+            border: none;
+            color: #000;
+            border-radius: 8px;
+            padding: 6px 14px;
+            font-weight: 600;
+            transition: 0.1s ease;
+            
+        }
+
+        .btn-creer:hover {
+            background: #5b12ad;
+            transform: scale(1.05);
+        }
+
+</style>
+</head>
+<body>
+
+    <div class="container mt-4 header-logo">
+    <img src="logo_entete_fsa.png" alt="Logo FSA" class="img-fluid">
+  </div>
+  <br>
+<h2>Emploi du Temps – Filière ILTI</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Heure</th>
+            <th>Lundi</th>
+            <th>Mardi</th>
+            <th>Mercredi</th>
+            <th>Jeudi</th>
+            <th>Vendredi</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>08:00 - 10:00</td>
+            <td><span class="matiere">Programmation Web</span><br><span class="salle">Salle 12</span></td>
+            <td></td>
+            <td><span class="matiere">Base de Données</span><br><span class="salle">Salle 5</span></td>
+            <td></td>
+            <td><span class="matiere">Réseaux</span><br><span class="salle">Salle 8</span></td>
+        </tr>
+
+        <tr>
+            <td>10:00 - 12:00</td>
+            <td></td>
+            <td><span class="matiere">Analyse</span><br><span class="salle">Salle 3</span></td>
+            <td></td>
+            <td><span class="matiere">Architecture PC</span><br><span class="salle">Salle 2</span></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>14:00 - 16:00</td>
+            <td><span class="matiere">Programmation C</span><br><span class="salle">Salle 11</span></td>
+            <td></td>
+            <td><span class="matiere">Méthodologie</span><br><span class="salle">Salle 7</span></td>
+            <td></td>
+            <td><span class="matiere">Anglais Technique</span><br><span class="salle">Salle 6</span></td>
+        </tr>
+
+        <tr>
+            <td>16:00 - 18:00</td>
+            <td></td>
+            <td><span class="matiere">Projet Tutoré</span><br><span class="salle">Lab 1</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+    
+</table>
+<br>
+<br>
+        <button class="btn-edit"><i class="fa-solid fa-pen"></i> Modifier</button>
+         <button class="btn-delete"><i class="fa-solid fa-trash"></i> Supprimer</button>
+         <button class="btn-creer"><i class="fa-solid fa-trash"></i> Creer un autre emploi</button>
+                        
+<script>
+    const logo = document.querySelector("img.img-fluid");
+      if (logo) {
+        logo.addEventListener("mouseenter", () => logo.style.transform = "scale(1.05)");
+        logo.addEventListener("mouseleave", () => logo.style.transform = "scale(1)");
+      }
+</script>
+</body>
+</html>

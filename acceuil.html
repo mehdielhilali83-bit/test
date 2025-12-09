@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FSA Student Dashboard</title>
-  
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
@@ -28,14 +29,17 @@
     }
 
     .navbar {
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       border-radius: 12px;
       margin: 20px 0;
       backdrop-filter: blur(5px);
       background-color: rgba(255, 255, 255, 0.8);
     }
 
-    .content h3, .content h4, .content h5, .content p {
+    .content h3,
+    .content h4,
+    .content h5,
+    .content p {
       text-align: center;
       margin-bottom: 15px;
     }
@@ -54,6 +58,7 @@
       color: white;
       text-decoration: none;
     }
+
     .footer a:hover {
       text-decoration: underline;
     }
@@ -68,12 +73,30 @@
       color: white;
       margin-right: 5px;
     }
-    .social-btn.facebook { background-color: #3b5998; }
-    .social-btn.twitter { background-color: #55acee; }
-    .social-btn.google { background-color: #dd4b39; }
-    .social-btn.instagram { background-color: #ac2bac; }
-    .social-btn.linkedin { background-color: #0082ca; }
-    .social-btn.github { background-color: #333333; }
+
+    .social-btn.facebook {
+      background-color: #3b5998;
+    }
+
+    .social-btn.twitter {
+      background-color: #55acee;
+    }
+
+    .social-btn.google {
+      background-color: #dd4b39;
+    }
+
+    .social-btn.instagram {
+      background-color: #ac2bac;
+    }
+
+    .social-btn.linkedin {
+      background-color: #0082ca;
+    }
+
+    .social-btn.github {
+      background-color: #333333;
+    }
 
     .footer-bottom {
       background-color: #6b738e;
@@ -81,32 +104,40 @@
       padding: 10px 0;
       margin-top: 20px;
     }
+
+    .header-logo img {
+      max-width: 300px;
+      margin: 20px auto;
+      display: block;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      border-radius: 15px;
+    }
   </style>
 </head>
 
 <body>
 
- <body >
-   <div class="container mt-4 text-center">
-    <img src="logo_entete_fsa.png" alt="Logo FSA" class="img-fluid" style="max-width: 1000px;">
+
+  <div class="container mt-4 header-logo">
+    <div class="row">
+      <div class="col-12 text-center">
+        <img src="logo_entete_fsa.png" alt="Logo FSA" class="img-fluid" style="max-width: 1000px;">
+      </div>
+    </div>
   </div>
+
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light mx-3 px-3">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">FSA Dashboard</a>
-      <button class="navbar-toggler" type="button" 
-              data-bs-toggle="collapse" 
-              data-bs-target="#navbarNavDropdown" 
-              aria-controls="navbarNavDropdown" 
-              aria-expanded="false" 
-              aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Accueil</a>
-          </li>
+
           <li class="nav-item">
             <a class="nav-link" href="login old.html" target="_blank">Se connecter</a>
           </li>
@@ -117,19 +148,17 @@
             <a class="nav-link" href="http://scol.fsa.ac.ma/edt/" target="_blank">Accès à votre planning</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" target="_blank">Accès à votre note</a>
+            <a class="nav-link" href="resultat.html" target="_blank">Accès à votre note</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" 
-               role="button" 
-               data-bs-toggle="dropdown" 
-               aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
               Plus
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <li><a class="dropdown-item" href="support.html">Support Technique & FAQ</a></li>
               <li><a class="dropdown-item" href="login old.html">Déconnexion</a></li>
-              
+              <li><a class="dropdown-item" href="contacter-admin.html">Probleme</a></li>
             </ul>
           </li>
         </ul>
@@ -137,9 +166,13 @@
     </div>
   </nav>
 
+
+
+
   <div class="container content">
     <h3>👋 Bienvenue, étudiant(e) !</h3>
-    <h4>Nous sommes ravis de vous accueillir ! Ce site est conçu pour vous aider à exceller dans vos études, à votre propre rythme.</h4>
+    <h4>Nous sommes ravis de vous accueillir ! Ce site est conçu pour vous aider à exceller dans vos études, à votre
+      propre rythme.</h4>
     <p><strong>Votre succès est notre priorité. Que cherchez-vous aujourd'hui ?</strong></p>
     <br>
     <h5>- Recherche de cours/matières ? Rendez-vous à la section Ressources.</h5>
@@ -149,22 +182,29 @@
     <h5>- ⭐ Pas encore de compte ? Cliquez ici pour créer votre accès personnel.</h5>
 
     <h3 class="mt-4"><strong>⚠️ Un problème de connexion ou d'identifiants ?</strong></h3>
-    <h4>Si vous rencontrez un dysfonctionnement ou avez besoin d'assistance, notre service de support est à votre entière disposition : [Centre d'Aide/Support]</h4>
+    <h4>Si vous rencontrez un dysfonctionnement ou avez besoin d'assistance, notre service de support est à votre
+      entière disposition : [Centre d'Aide/Support]</h4>
   </div>
+
+
+
+
+
+
 
   <footer class="footer pt-5 mt-5">
     <div class="container">
       <div class="row">
         <div class="col-md-3 mb-4">
           <h6 class="text-uppercase fw-bold">Ecole Zyad</h6>
-          <p>Si vous rencontrez un dysfonctionnement ou avez besoin d'assistance, notre service de support est à votre entière disposition.</p>
+          <p>Si vous rencontrez un dysfonctionnement ou avez besoin d'assistance, notre service de support est à votre
+            entière disposition.</p>
         </div>
         <div class="col-md-3 mb-4">
-          <h6 class="text-uppercase fw-bold"><i class="fas fa-location-dot me-2"></i>Localisation</h6> 
+          <h6 class="text-uppercase fw-bold"><i class="fas fa-location-dot me-2"></i>Localisation</h6>
           <p>📍 Ecole Al Hanane 4, Agadir, Maroc</p>
-          <a href="https://maps.app.goo.gl/YtRpB5TZox6rCsE36" 
-             class="text-white text-decoration-underline" 
-             target="_blank">Voir sur Google Maps</a>
+          <a href="https://maps.app.goo.gl/YtRpB5TZox6rCsE36" class="text-white text-decoration-underline"
+            target="_blank">Voir sur Google Maps</a>
         </div>
         <div class="col-md-3 mb-4">
           <h6 class="text-uppercase fw-bold">Contact</h6>
@@ -175,36 +215,39 @@
         </div>
         <div class="col-md-3 mb-4">
           <h6 class="text-uppercase fw-bold">Follow Us</h6>
-          <a href="https://www.facebook.com/" class="social-btn facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.facebook.com/" class="social-btn facebook" target="_blank"><i
+              class="fab fa-facebook-f"></i></a>
           <a href="https://x.com/" class="social-btn twitter" target="_blank"><i class="fab fa-twitter"></i></a>
           <a href="https://www.google.com/" class="social-btn google" target="_blank"><i class="fab fa-google"></i></a>
-          <a href="https://www.instagram.com/" class="social-btn instagram" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.linkedin.com/" class="social-btn linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/" class="social-btn instagram" target="_blank"><i
+              class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/" class="social-btn linkedin" target="_blank"><i
+              class="fab fa-linkedin-in"></i></a>
           <a href="https://github.com/" class="social-btn github" target="_blank"><i class="fab fa-github"></i></a>
         </div>
       </div>
       <div class="footer-bottom">
-        © 2025 Copyright: <a href="#">FSA Dashboard</a> 
+        © 2025 Copyright: <a href="#">FSA Dashboard</a>
       </div>
     </div>
   </footer>
+
+
+
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
 
-     
-
-      
-
-      // 3️⃣ Animation logo
+      // animatio de logo
       const logo = document.querySelector("img.img-fluid");
       if (logo) {
         logo.addEventListener("mouseenter", () => logo.style.transform = "scale(1.05)");
         logo.addEventListener("mouseleave", () => logo.style.transform = "scale(1)");
       }
 
-      // 4️⃣ Animation footer
+      //  Animation footer
       const footer = document.querySelector(".footer");
       if (footer) {
         window.addEventListener("scroll", () => {
@@ -215,4 +258,5 @@
     });
   </script>
 </body>
+
 </html>

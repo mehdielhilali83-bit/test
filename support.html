@@ -24,7 +24,6 @@
       display: block;
       box-shadow: 0 8px 20px rgba(0,0,0,0.2);
       border-radius: 15px;
-      transform: perspective(500px) rotateX(2deg) rotateY(2deg);
     }
 
     .navbar {
@@ -93,7 +92,7 @@
 
 <body>
 
-  <div class="container mt-4">
+  <div class="container mt-4 header-logo">
     <div class="row">
       <div class="col-12 text-center">
         <img src="logo_entete_fsa.png" alt="Logo FSA" class="img-fluid" style="max-width: 1000px;">
@@ -111,11 +110,11 @@
 
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto"> 
-                <li class="nav-item"><a class="nav-link" href="acceuil.html">Acceuil</a></li>
+                
                 <li class="nav-item"><a class="nav-link" href="login old.html">Se connecter</a></li>
                 <li class="nav-item"><a class="nav-link" href="inscription.html">Créer un compte</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Accès à votre planning</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Accès à votre note</a></li>
+                <li class="nav-item"><a class="nav-link" href="http://scol.fsa.ac.ma/edt/">Accès à votre planning</a></li>
+                <li class="nav-item"><a class="nav-link" href="resultat.html">Accès à votre note</a></li>
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle active"  id="navbarDropdownMenuLink" data-bs-toggle="dropdown">
@@ -123,8 +122,8 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item active" href="support.html"><i class="fas fa-headset me-2"></i>Support Technique & FAQ</a></li>
-                        <li><a class="dropdown-item" href="#">bla bla</a></li>
-                        <li><a class="dropdown-item" href="#">bla bla</a></li>
+                        <li><a class="dropdown-item" href="login old.html">Déconnexion</a></li>
+                        <li><a class="dropdown-item" href="support.html">Probleme</a></li>
                     </ul>
                 </li>
             </ul>
@@ -184,7 +183,6 @@
         </div>
     </div>
 
-    <!-- Contact row -->
     <div class="row mt-5 p-4 help-header">
         <div class="col-md-6 text-center">
             <h4 class="fw-bold mb-3"><i class="fas fa-phone me-2"></i> Téléphone</h4>
@@ -229,12 +227,12 @@
 
         <div class="col-md-3 mb-4">
           <h6 class="text-uppercase fw-bold">Follow Us</h6>
-          <a href="#" class="social-btn facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="social-btn twitter"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="social-btn google"><i class="fab fa-google"></i></a>
-          <a href="#" class="social-btn instagram"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="social-btn linkedin"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#" class="social-btn github"><i class="fab fa-github"></i></a>
+          <a href="https://www.facebook.com/" class="social-btn facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://x.com/" class="social-btn twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.google.com/" class="social-btn google"><i class="fab fa-google"></i></a>
+          <a href="https://www.instagram.com/" class="social-btn instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/" class="social-btn linkedin"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/" class="social-btn github"><i class="fab fa-github"></i></a>
         </div>
 
       </div>
@@ -256,16 +254,6 @@
         logo.addEventListener("mouseenter", () => (logo.style.transform = "scale(1.05)"));
         logo.addEventListener("mouseleave", () => (logo.style.transform = "scale(1)"));
       }
-
-  
-const alertLinks = document.querySelectorAll('a[href="#"]');
-alertLinks.forEach(link => {
-  link.addEventListener("click", function (e) {
-    e.preventDefault();
-    alert("⛔ Veuillez vous connecter d'abord pour accéder à cette fonctionnalité !");
-  });
-});
-
 
 const footer = document.querySelector(".footer");
 if (footer) {
